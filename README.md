@@ -1,13 +1,5 @@
 # virtual-kitchen-website
 Database-driven recipe sharing platform built with PHP and MySQL.
-# Virtual Kitchen Website
-
-A full-stack recipe sharing platform built with PHP and MySQL.
-
-# Virtual Kitchen Website
-
-A full-stack recipe sharing platform built with PHP and MySQL.
-
 ## Features
 - Public users can browse and search recipes
 - Registered users can add, update, and manage their own recipes
