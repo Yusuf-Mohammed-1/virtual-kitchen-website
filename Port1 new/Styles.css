@@ -1,0 +1,186 @@
+/* This is the styles for all headers, and code below is the style for all webpages */
+.main-header {
+    background-color: #003366; /* Navy Blue */
+    color: #FFFFFF; /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 107px;
+    height: 90px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Recipe styles and it includes the images, content, etc */
+.recipe {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.recipe img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.recipe-content {
+    flex: 1;
+}
+
+/* Ingredient List Styles */
+.ingredient-list {
+    padding-left: 20px;
+}
+
+.ingredient {
+    margin-bottom: 5px;
+}
+
+/* Cooking Step Styles */
+.cooking-step {
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .recipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* These are styles for my form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-15%);
+    width: 40px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* This is styles for recipe video and images*/
+      .recipe {
+            display: flex; 
+            margin-bottom: 20px; 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            border-radius: 8px; 
+            background-color: #f9f9f9; 
+        }
+        .recipe img {
+            width: 300px; 
+            height: 400px; 
+            margin-right: 20px; 
+            border-radius: 4px; 
+        }
+        .recipe-content {
+            flex: 1; 
+        }
+        .video-container {
+            margin-top: 10px; 
+            text-align: left; 
+        }
+        .video-container iframe {
+            width: 300px; 
+            height: 169px; 
+        }

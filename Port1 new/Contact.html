@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- This links to my stylesheet -->
+    <title>Contact Us</title>
+</head>
+<body>
+    <header class="main-header">
+        <img src="Icons/Logo.jpeg" alt="Virtual Kitchen Essentials Logo" class="logo"> 
+        <h1 class="title">Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="guest.php">View All Recipes</a></li>
+                <li><a href="register.php">Sign Up</a></li> 
+                <li><a href="login.php">Sign In</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="form-title">Book Your Private Cooking Lesson Today!</h2> <!-- This ia a new Heading for the form -->
+        <form id="contactForm" onsubmit="return validateForm()" style="margin-top: 20px;"> <!-- This makes sure the form is submitted with validation -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required> <!-- This makes sure a person enters a name -->
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required> <!-- This makes sure people enter a email -->
+                <img src="Icons/Email.png" alt="Email Icon" class="icon"> <!-- This is a email icon -->
+            </div>
+            <div class="form-group">
+                <label for="confirmEmail">Confirm Email:</label>
+                <input type="email" id="confirmEmail" required> <!-- This makes sure a person confirms their email -->
+                <img src="Icons/Email.png" alt="Email Icon" class="icon"> <!-- This is a email icon -->
+            </div>
+            <div class="form-group">
+                <label for="contactMethod">Preferred Contact Method:</label>
+                <select id="contactMethod"> <!-- This a dropdown for contact method -->
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate" required> <!-- This makes sure a appointment date is entered -->
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" required> <!-- This makes sure a phone number is entered -->
+                <img src="Icons/Phone.png" alt="Phone Icon" class="icon"> <!-- This is the phone icon -->
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="submit-button"> <!-- This is the submit button -->
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Mohammed Yusuf | Email: 240104887@aston.ac.uk | Student Number: 240104887</p>
+    </footer>
+    <script src="script.js"></script> <!-- Here is a link to the JavaScript file -->
+</body>
+</html>
